@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Maui\**" />
+    <EmbeddedResource Remove="Maui\**" />
+    <None Remove="Maui\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="GeneratedCode\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NSwag.Core" Version="13.20.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TheWatch\TheWatch.Shared\TheWatch.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

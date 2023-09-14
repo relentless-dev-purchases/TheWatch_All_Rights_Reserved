@@ -1,0 +1,24 @@
+﻿
+@page "/counter"
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    /// <summary>   Number of currents. </summary>
+    private int currentCount = 0;
+
+    ///-------------------------------------------------------------------------------------------------
+    /// <summary>   Increment count. </summary>
+    ///
+    /// <remarks>   Broadsides, 9/14/2023. </remarks>
+    ///-------------------------------------------------------------------------------------------------
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

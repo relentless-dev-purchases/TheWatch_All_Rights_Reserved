@@ -1,0 +1,8 @@
+﻿
+@page "/uisettings"
+
+<h3>WatchSettings</h3>
+
+@code {
+
+}

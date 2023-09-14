@@ -1,0 +1,19 @@
+﻿
+@page "/"
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject ILocalStorageService LocalStorageService
+@inject IAuthenticationService AuthenticationService
+@inject IWatchService WatchService
+@inject IUISettingsService UISettingsService
+@inject IWatchSettingsService WatchSettingsService
+@inject IUserProfileService UserProfileService
+@inject ISignUpService SignUpService
+@inject IStateService StateService
+
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
